@@ -8,6 +8,10 @@ function _rails_command () {
   fi
 }
 
+rrc() {
+    rake routes CONTROLLER=$1
+}
+
 alias rc='_rails_command console'
 alias rd='_rails_command destroy'
 alias rdb='_rails_command dbconsole'
